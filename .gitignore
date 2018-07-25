@@ -108,3 +108,8 @@ venv.bak/
 *.xlsx
 *.pdf
 *.zip
+
+Images
+*.png
+*.jpg
+*.jpeg
