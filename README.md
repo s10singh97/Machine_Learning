@@ -1,3 +1,3 @@
 # Machine_Learning
 
-Machine_Learning A-Z Corse contents(Udemy)
+Machine_Learning A-Z Course contents(Udemy)
