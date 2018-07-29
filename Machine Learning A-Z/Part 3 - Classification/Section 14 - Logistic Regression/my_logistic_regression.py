@@ -19,3 +19,6 @@ classifier = LogisticRegression(random_state = 0)
 classifier.fit(X_train, y_train)
 
 y_pred = classifier.predict(X_test)
+
+from sklearn.metrics import confusion_matrix
+cm = confusion_matrix(y_test, y_pred)
