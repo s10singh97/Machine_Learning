@@ -49,6 +49,7 @@ plt.title('Classifier (Training set)')
 plt.xlabel('Age')
 plt.ylabel('Estimated Salary')
 plt.legend()
+plt.savefig('sap.png')
 plt.show()
 
 # Visualising the Test set results
@@ -67,4 +68,5 @@ plt.title('Classifier (Test set)')
 plt.xlabel('Age')
 plt.ylabel('Estimated Salary')
 plt.legend()
+plt.savefig('sap_test.png')
 plt.show()
