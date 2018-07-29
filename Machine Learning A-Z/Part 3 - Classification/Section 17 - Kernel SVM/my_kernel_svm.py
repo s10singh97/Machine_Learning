@@ -22,7 +22,9 @@ X_test = sc.transform(X_test)
 
 # Fitting classifier to the Training set
 # Create your classifier here
-
+from sklearn.svm import SVC
+classifier = SVC(kernel = 'rbf', random_state = 0)
+classifier.fit(X_train, y_train)
 
 # Predicting the Test set results
 y_pred = classifier.predict(X_test)
@@ -47,6 +49,7 @@ plt.title('Classifier (Training set)')
 plt.xlabel('Age')
 plt.ylabel('Estimated Salary')
 plt.legend()
+plt.savefig('sap_training.png')
 plt.show()
 
 # Visualising the Test set results
@@ -65,4 +68,5 @@ plt.title('Classifier (Test set)')
 plt.xlabel('Age')
 plt.ylabel('Estimated Salary')
 plt.legend()
+plt.savefig('sap_test.png')
 plt.show()
