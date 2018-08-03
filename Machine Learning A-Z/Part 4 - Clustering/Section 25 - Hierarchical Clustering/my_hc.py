@@ -12,3 +12,8 @@ plt.xlabel('Customers')
 plt.ylabel('Euclidean Distance')
 plt.savefig('HC_dendogram.png')
 plt.show()
+
+from sklearn.cluster import AgglomerativeClustering
+hc = AgglomerativeClustering(n_clusters = 5, affinity = 'euclidean', linkage = 'ward')
+y_hc = hc.fit_predict(X)
+
