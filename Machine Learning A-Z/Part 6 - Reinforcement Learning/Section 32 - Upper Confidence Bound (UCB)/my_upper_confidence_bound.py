@@ -10,6 +10,7 @@ d = 10
 ads_selected = []
 numbers_of_selections = [0]*d
 sums_of_reward = [0]*d
+total_reward = 0
 for n in range(0, N):
     ad = 0
     max_upper_bound = 0
@@ -23,3 +24,8 @@ for n in range(0, N):
         if upper_bound > max_upper_bound:
             max_upper_bound = upper_bound
             ad = i
+    ads_selected.append(ad)
+    numbers_of_selections[ad] += 1
+    rewards = dataset.values[n, ad]
+    sums_of_reward[ad] += rewards
+    total_reward += rewards
