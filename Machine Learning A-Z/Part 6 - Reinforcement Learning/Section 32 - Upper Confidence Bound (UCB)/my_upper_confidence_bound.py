@@ -29,3 +29,11 @@ for n in range(0, N):
     rewards = dataset.values[n, ad]
     sums_of_reward[ad] += rewards
     total_reward += rewards
+    
+# Visualising the Result
+plt.hist(ads_selected)
+plt.title('Histogram of ads selection')
+plt.xlabel('Ads')
+plt.ylabel('NUmber of times each ad was selected')
+plt.savefig('UCB.png')
+plt.show()
