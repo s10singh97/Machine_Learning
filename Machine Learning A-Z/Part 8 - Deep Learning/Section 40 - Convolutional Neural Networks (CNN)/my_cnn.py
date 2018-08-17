@@ -15,7 +15,7 @@ classifier.add(Dense(output_dim = 1, activation = 'sigmoid'))
 
 classifier.compile(optimizer = 'adam', metrics = ['accuracy'], loss = 'binary_crossentropy')
 
-Fitting the CNN to the images
+#Fitting the CNN to the images
 
 from keras.preprocessing.image import ImageDataGenerator
 
