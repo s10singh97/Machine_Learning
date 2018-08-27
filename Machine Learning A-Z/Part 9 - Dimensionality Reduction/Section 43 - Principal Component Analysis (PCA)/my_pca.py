@@ -12,7 +12,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, rando
 from sklearn.preprocessing import StandardScaler
 sc = StandardScaler()
 X_train = sc.fit_transform(X_train)
-X_test = sc.transform(X_train)
+X_test = sc.transform(X_test)
 
 # Applying PCA
 from sklearn.decomposition import PCA
@@ -46,6 +46,7 @@ plt.title('Logistic Regression (Training set)')
 plt.xlabel('PC1')
 plt.ylabel('PC2')
 plt.legend()
+plt.savefig('pca_training_set.png')
 plt.show()
 
 # Visualising the Test set results
@@ -64,4 +65,5 @@ plt.title('Logistic Regression (Test set)')
 plt.xlabel('PC1')
 plt.ylabel('PC2')
 plt.legend()
+plt.savefig('pca_test_set.png')
 plt.show()
